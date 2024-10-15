@@ -19,12 +19,11 @@ export class CounterComponent {
     console.log('-'.repeat(10));
   }
 
-  ngOnChange(changes: SimpleChanges) {
+  ngOnChanges(changes: SimpleChanges) {
     // before and  during render
     console.log('ngOnChange');
     console.log('-'.repeat(10));
     console.log(changes);
-    
   }
 }
 /* Ciclo de vida de componentes
