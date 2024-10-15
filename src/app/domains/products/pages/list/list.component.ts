@@ -15,3 +15,13 @@ export class ListComponent {
     console.log(event);    
   }
 }
+/* Ciclo de vida de componentes
+constructor
+ngOnChanges
+ngOnInit
+ngDoCheck
+  ngAfterContentInit
+  ngAfterContentChecked
+  ngAfterViewInit
+  ngAfterViewCheck
+ngOnDistroy */
