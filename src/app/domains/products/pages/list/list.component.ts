@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-  fromChild(event: string) {
+  fromChild(event: string) { // Se necesita para poder recibir los eventos de los componentes hijos
     console.log('Estamos en el padre');
     console.log(event);    
   }
