@@ -5,7 +5,7 @@ import { CounterComponent } from '../../../shared/components/counter/counter.com
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CounterComponent, CounterComponent],
+  imports: [CommonModule, CounterComponent, CounterComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
