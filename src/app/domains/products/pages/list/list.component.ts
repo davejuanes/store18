@@ -77,3 +77,10 @@ ngDoCheck
   ngAfterViewInit
   ngAfterViewCheck
 ngOnDistroy */
+
+/* Prop drilling
+El "Prop Drilling", también conocido como "Input Drilling" en Angular, se refiere a la complejidad de pasar datos entre componentes a través de múltiples niveles utilizando @Input y @Output. Este enfoque puede volverse complicado y difícil de mantener en estructuras de componentes profundas.
+
+Solución:
+
+Para evitar este problema, se puede utilizar un store o un mecanismo centralizado para manejar el estado de la aplicación. Esto permite que los componentes se suscriban directamente al estado que necesitan, evitando la necesidad de pasar datos y eventos manualmente a través de la jerarquía. */
