@@ -26,6 +26,11 @@ export class CounterComponent {
     console.log('ngOnChange');
     console.log('-'.repeat(10));
     console.log(changes);
+    const duration = changes['duration'];
+    console.log(duration);
+    if (duration) {
+      this.doSomething()
+    }
   }
   ngOnInit() {
     // after render
@@ -45,6 +50,10 @@ export class CounterComponent {
   ngOnDestroy() {
     console.log('ngOnDestroy');
     console.log('-'.repeat(10));
+  }
+  doSomething() {
+    console.log('change duration');
+    // async
   }
 }
 /* Ciclo de vida de componentes
