@@ -1,5 +1,5 @@
 import { Component, inject, Input, signal, SimpleChanges } from '@angular/core';
-import { Product } from '../../models/product.mode';
+import { Product } from '../../models/product.model';
 import { CommonModule } from '@angular/common';
 import { CartService } from '../../services/cart.service';
 
@@ -12,7 +12,6 @@ import { CartService } from '../../services/cart.service';
 })
 export class HeaderComponent {
   hideSideMenu = signal(true);
-  total = signal(0);
   private cartService = inject(CartService)
   cart = this.cartService.cart;
   total = this.cartService.total;
