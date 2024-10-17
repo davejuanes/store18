@@ -1,12 +1,17 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { formatDistance } from 'date-fns';
 
 @Pipe({
   name: 'timeAgo',
   standalone: true
 })
 export class TimeAgoPipe implements PipeTransform {
-
-  transform(value: Date | string | number): string {
+  transform(value: string): string {
+    const date = new Date(value);
+    const today = new Date();
+    return formatDistance(today, date);
+  }
+  /* transform(value: Date | string | number): string {
     const now = new Date();
     const inputDate = new Date(value);
     const diff = Math.abs(now.getTime() - inputDate.getTime());
@@ -34,6 +39,5 @@ export class TimeAgoPipe implements PipeTransform {
       return minutes === 1 ? '1 minute ago' : `${minutes} minutes ago`;
     }
     return seconds === 1 ? '1 second ago' : `${seconds} seconds ago`;
-  }
-
+  } */
 }
