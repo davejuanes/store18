@@ -76,3 +76,6 @@ El "Prop Drilling", también conocido como "Input Drilling" en Angular, se refie
 Solución:
 
 Para evitar este problema, se puede utilizar un store o un mecanismo centralizado para manejar el estado de la aplicación. Esto permite que los componentes se suscriban directamente al estado que necesitan, evitando la necesidad de pasar datos y eventos manualmente a través de la jerarquía. */
+
+/* Lazzyloading y code splitting
+separar cada archivo js en chunk mas pequeños */
